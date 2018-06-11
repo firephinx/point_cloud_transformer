@@ -1,0 +1,9 @@
+<launch>
+
+  <node pkg="point_cloud_transformer" type="point_cloud_transformer_node" name="point_cloud_transformer_node" output="screen">
+    <param name="input_point_cloud_topic_name"        value="/point_cloud" />
+    <param name="output_point_cloud_topic_name"       value="/point_cloud_transformer/point_cloud" />
+    <param name="output_point_cloud_parent_frame_id"  value="/map" />
+  </node>
+
+</launch>
